@@ -1,4 +1,5 @@
 distance = 0
+energy = 5
 
 while distance < 50
 
@@ -11,10 +12,18 @@ while distance < 50
     distance = distance + 1
     puts "Distance from home is #{distance}km"
 
-  elsif entry == "run"
+    energy = energy + 3
+
+  elsif entry == "run" && energy >= 4
 
     distance = distance + 5
     puts "Distance from home is #{distance}km"
+
+    energy = energy - 4
+
+  elsif entry == "run" && energy < 4
+
+    puts "you don't have enough energy to run"
 
   elsif entry == "go home"
 
