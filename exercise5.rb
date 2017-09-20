@@ -15,6 +15,11 @@ while distance < 50
 
     distance = distance + 5
     puts "Distance from home is #{distance}km"
+
+  elsif entry == "go home"
+    
+    distance = 51
+
   end
 
 end
