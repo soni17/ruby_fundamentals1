@@ -17,8 +17,12 @@ while distance < 50
     puts "Distance from home is #{distance}km"
 
   elsif entry == "go home"
-    
+
     distance = 51
+
+  else
+
+    puts "command not recognized"
 
   end
 
